@@ -1,162 +1,162 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0.1 (Python 3.12.4 on darwin)" generated="2024-07-28T22:49:45.609649" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0.1 (Python 3.12.4 on darwin)" generated="2024-08-02T21:02:39.411240" rpa="false" schemaversion="5">
 <suite id="s1" name="LoginAndScroll" source="/Users/bdf/PycharmProjects/RobotDemo/Tests/LoginAndScroll.robot">
 <kw name="Begin Web Test" owner="Common" type="SETUP">
 <kw name="Log" owner="BuiltIn">
-<msg time="2024-07-28T22:49:45.796368" level="INFO">Starting the test with opening the chrome browser!</msg>
+<msg time="2024-08-02T21:02:39.620902" level="INFO">Starting the test with opening the chrome browser!</msg>
 <arg>Starting the test with opening the chrome browser!</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-07-28T22:49:45.796269" elapsed="0.000136"/>
+<status status="PASS" start="2024-08-02T21:02:39.620807" elapsed="0.000132"/>
 </kw>
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-07-28T22:49:45.796661" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<msg time="2024-08-02T21:02:39.621203" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
 <arg>about:blank</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-07-28T22:49:45.796526" elapsed="1.379841"/>
+<status status="PASS" start="2024-08-02T21:02:39.621064" elapsed="1.311231"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-07-28T22:49:47.176825" elapsed="0.034591"/>
+<status status="PASS" start="2024-08-02T21:02:40.932852" elapsed="0.324365"/>
 </kw>
-<status status="PASS" start="2024-07-28T22:49:45.795816" elapsed="1.415719"/>
+<status status="PASS" start="2024-08-02T21:02:39.620342" elapsed="1.637027"/>
 </kw>
 <test id="s1-t1" name="Login and scroll to find Twitter element" line="16">
 <kw name="Given User Navigates to Required URL" owner="Navigation">
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2024-07-28T22:49:47.212733" level="INFO">Opening url 'https://www.saucedemo.com/v1/index.html'</msg>
+<msg time="2024-08-02T21:02:41.258538" level="INFO">Opening url 'https://www.saucedemo.com/v1/index.html'</msg>
 <arg>${START_URL}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2024-07-28T22:49:47.212611" elapsed="0.506092"/>
+<status status="PASS" start="2024-08-02T21:02:41.258418" elapsed="5.921245"/>
 </kw>
 <kw name="Title Should Be" owner="SeleniumLibrary">
-<msg time="2024-07-28T22:49:47.723486" level="INFO">Page title is 'Swag Labs'.</msg>
+<msg time="2024-08-02T21:02:50.834000" level="INFO">Page title is 'Swag Labs'.</msg>
 <arg>${PAGE_TITLE}</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<status status="PASS" start="2024-07-28T22:49:47.719007" elapsed="0.004605"/>
+<status status="PASS" start="2024-08-02T21:02:47.180281" elapsed="3.653801"/>
 </kw>
-<status status="PASS" start="2024-07-28T22:49:47.212377" elapsed="0.511346"/>
+<status status="PASS" start="2024-08-02T21:02:41.258194" elapsed="9.575985"/>
 </kw>
 <kw name="And User Login to our Website" owner="Login">
 <kw name="Log" owner="BuiltIn">
-<msg time="2024-07-28T22:49:47.724287" level="INFO">Login with username and password!</msg>
+<msg time="2024-08-02T21:02:50.835312" level="INFO">Login with username and password!</msg>
 <arg>Login with username and password!</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-07-28T22:49:47.724185" elapsed="0.000133"/>
+<status status="PASS" start="2024-08-02T21:02:50.835082" elapsed="0.000279"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-07-28T22:49:47.724895" level="INFO">Typing text 'standard_user' into text field 'id=user-name'.</msg>
+<msg time="2024-08-02T21:02:50.836152" level="INFO">Typing text 'standard_user' into text field 'id=user-name'.</msg>
 <arg>${USER_NAME_LOCATOR}</arg>
 <arg>${USER_NAME}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-28T22:49:47.724391" elapsed="0.145291"/>
+<status status="PASS" start="2024-08-02T21:02:50.835477" elapsed="0.295578"/>
 </kw>
 <kw name="Input Password" owner="SeleniumLibrary">
-<msg time="2024-07-28T22:49:47.870457" level="INFO">Typing password into text field 'id=password'.</msg>
-<msg time="2024-07-28T22:49:47.898852" level="INFO">Temporally setting log level to: NONE</msg>
+<msg time="2024-08-02T21:02:51.131776" level="INFO">Typing password into text field 'id=password'.</msg>
+<msg time="2024-08-02T21:02:51.171693" level="INFO">Temporally setting log level to: NONE</msg>
 <arg>${PASSWORD_LOCATOR}</arg>
 <arg>${PASSWORD}</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-28T22:49:47.870050" elapsed="0.069879"/>
+<status status="PASS" start="2024-08-02T21:02:51.131450" elapsed="0.105265"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-07-28T22:49:47.940280" level="INFO">Clicking button 'id=login-button'.</msg>
+<msg time="2024-08-02T21:02:51.238042" level="INFO">Clicking button 'id=login-button'.</msg>
 <arg>${LOGIN_BUTTON_LOCATOR}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-28T22:49:47.940109" elapsed="2.104957"/>
+<status status="PASS" start="2024-08-02T21:02:51.237262" elapsed="16.189320"/>
 </kw>
-<status status="PASS" start="2024-07-28T22:49:47.723980" elapsed="2.321180"/>
+<status status="PASS" start="2024-08-02T21:02:50.834529" elapsed="16.592154"/>
 </kw>
 <kw name="And Products Page is Loaded" owner="Products">
 <kw name="Log" owner="BuiltIn">
-<msg time="2024-07-28T22:49:50.045823" level="INFO">Products screen is displayed!</msg>
+<msg time="2024-08-02T21:03:07.427771" level="INFO">Products screen is displayed!</msg>
 <arg>Products screen is displayed!</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-07-28T22:49:50.045738" elapsed="0.000118"/>
+<status status="PASS" start="2024-08-02T21:03:07.427549" elapsed="0.000296"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${PRODUCTS_PAGE_HEADING_LOCATOR}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-28T22:49:50.045934" elapsed="0.020020"/>
+<status status="PASS" start="2024-08-02T21:03:07.427977" elapsed="0.023417"/>
 </kw>
-<status status="PASS" start="2024-07-28T22:49:50.045526" elapsed="0.020512"/>
+<status status="PASS" start="2024-08-02T21:03:07.427127" elapsed="0.024357"/>
 </kw>
 <kw name="When User Scrolls to Find Twitter Icon" owner="Products">
 <kw name="Log" owner="BuiltIn">
-<msg time="2024-07-28T22:49:50.066581" level="INFO">Scroll to see social links aka twitter as an example!</msg>
+<msg time="2024-08-02T21:03:07.452038" level="INFO">Scroll to see social links aka twitter as an example!</msg>
 <arg>Scroll to see social links aka twitter as an example!</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-07-28T22:49:50.066495" elapsed="0.000118"/>
+<status status="PASS" start="2024-08-02T21:03:07.451939" elapsed="0.000131"/>
 </kw>
 <kw name="Scroll Element Into View" owner="SeleniumLibrary">
 <arg>${TWITTER_ICON_LOCATOR}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" start="2024-07-28T22:49:50.066697" elapsed="0.294872"/>
+<status status="PASS" start="2024-08-02T21:03:07.452152" elapsed="0.278621"/>
 </kw>
-<status status="PASS" start="2024-07-28T22:49:50.066284" elapsed="0.295409"/>
+<status status="PASS" start="2024-08-02T21:03:07.451737" elapsed="0.279122"/>
 </kw>
 <kw name="Then Verify Twitter Icon is found" owner="Products">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${TWITTER_ICON_LOCATOR}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-28T22:49:50.362340" elapsed="0.011067"/>
+<status status="PASS" start="2024-08-02T21:03:07.731273" elapsed="0.012155"/>
 </kw>
-<status status="PASS" start="2024-07-28T22:49:50.362099" elapsed="0.011380"/>
+<status status="PASS" start="2024-08-02T21:03:07.731075" elapsed="0.012430"/>
 </kw>
 <tag>Full</tag>
 <tag>Smoke</tag>
-<status status="PASS" start="2024-07-28T22:49:47.211662" elapsed="3.161948"/>
+<status status="PASS" start="2024-08-02T21:02:41.257553" elapsed="26.486085"/>
 </test>
-<test id="s1-t2" name="Search for Product and Add it to Cart" line="24">
+<test id="s1-t2" name="Search for Product and Add it to Cart" line="25">
 <kw name="Given User Search for Product and Clicks on required Product Card" owner="Products">
 <kw name="Log" owner="BuiltIn">
-<msg time="2024-07-28T22:49:50.374369" level="INFO">Find Sauce Labs Onesie card and Go to Product Page!</msg>
+<msg time="2024-08-02T21:03:07.744590" level="INFO">Find Sauce Labs Onesie card and Go to Product Page!</msg>
 <arg>Find Sauce Labs Onesie card and Go to Product Page!</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-07-28T22:49:50.374286" elapsed="0.000113"/>
+<status status="PASS" start="2024-08-02T21:03:07.744485" elapsed="0.000139"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-07-28T22:49:50.374592" level="INFO">Clicking element 'xpath=/html[1]/body[1]/div[1]/div[2]/div[2]/div[1]/div[2]/div[1]/div[5]/div[2]/a[1]/div[1]'.</msg>
+<msg time="2024-08-02T21:03:07.744843" level="INFO">Clicking element 'xpath=/html[1]/body[1]/div[1]/div[2]/div[2]/div[1]/div[2]/div[1]/div[5]/div[2]/a[1]/div[1]'.</msg>
 <arg>${ONESIE_PRODUCT_LOCATOR}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-28T22:49:50.374476" elapsed="0.217708"/>
+<status status="PASS" start="2024-08-02T21:03:07.744718" elapsed="0.287855"/>
 </kw>
-<status status="PASS" start="2024-07-28T22:49:50.374123" elapsed="0.218165"/>
+<status status="PASS" start="2024-08-02T21:03:07.744312" elapsed="0.288397"/>
 </kw>
 <kw name="When Add Product To Cart Button is clicked" owner="OnesieProduct">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${PRODUCT_NAME_LOCATOR}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-28T22:49:50.592780" elapsed="0.014551"/>
+<status status="PASS" start="2024-08-02T21:03:08.033669" elapsed="0.026571"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-07-28T22:49:50.607973" level="INFO">Clicking button 'xpath=/html[1]/body[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/button[1]'.</msg>
+<msg time="2024-08-02T21:03:08.061151" level="INFO">Clicking button 'xpath=/html[1]/body[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/button[1]'.</msg>
 <arg>${ADD_TO_CART_BUTTON_LOCATOR}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-07-28T22:49:50.607554" elapsed="0.044854"/>
+<status status="PASS" start="2024-08-02T21:03:08.060786" elapsed="0.040778"/>
 </kw>
-<status status="PASS" start="2024-07-28T22:49:50.592547" elapsed="0.059945"/>
+<status status="PASS" start="2024-08-02T21:03:08.033348" elapsed="0.068307"/>
 </kw>
 <kw name="Then Verify Product is Added to Cart" owner="OnesieProduct">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${CARD_NOTIFICATION_LOCATOR}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-07-28T22:49:50.652936" elapsed="0.016136"/>
+<status status="PASS" start="2024-08-02T21:03:08.102112" elapsed="0.012242"/>
 </kw>
-<status status="PASS" start="2024-07-28T22:49:50.652744" elapsed="0.016427"/>
+<status status="PASS" start="2024-08-02T21:03:08.101886" elapsed="0.012548"/>
 </kw>
 <tag>Full</tag>
-<status status="PASS" start="2024-07-28T22:49:50.373808" elapsed="0.295499"/>
+<status status="PASS" start="2024-08-02T21:03:07.743876" elapsed="0.370690"/>
 </test>
 <kw name="End Web Test" owner="Common" type="TEARDOWN">
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-07-28T22:49:50.669910" elapsed="0.133385"/>
+<status status="PASS" start="2024-08-02T21:03:08.115232" elapsed="0.287708"/>
 </kw>
-<status status="PASS" start="2024-07-28T22:49:50.669763" elapsed="0.133729"/>
+<status status="PASS" start="2024-08-02T21:03:08.115085" elapsed="0.288024"/>
 </kw>
 <doc>This test will carry out a successful login and a scroll to find a certain element and perform an action on it</doc>
-<status status="PASS" start="2024-07-28T22:49:45.611212" elapsed="5.192320"/>
+<status status="PASS" start="2024-08-02T21:02:39.412837" elapsed="28.990314"/>
 </suite>
 <statistics>
 <total>
